@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Be you';
+    src: url('fonts/Be\ You.otf') format('truetype');
+}
+@font-face {
+    font-family: 'Bravely';
+    src: url('fonts/Bravely.otf') format('truetype');
+}
+
+body {
+    min-height: 100%;
+    background: linear-gradient(to right, purple, rgb(73, 33, 194));
+    color: white;
+}
+h1 {
+    text-align: center;
+    font-family: 'Bravely';
+    font-size: 90px;
+    text-shadow: 3px 3px 0px black;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    max-width: 400px;
+    margin: 50px auto;
+    border: 1px solid #f1f1f1;
+    background: rgba(241, 241, 241, 0.9);
+    box-shadow: 3px 3px 3px black;
+}
+.cell {
+    aspect-ratio: 1/1;
+    background: #090f29;
+    color: #f1f1f1;
+    cursor: pointer;
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    text-align: center;
+    letter-spacing: 0.9px;
+    text-shadow: 1px 1px 0px black;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Bravely';
+    font-size: 30px;
+}
+a:hover {
+    cursor: pointer;
+    text-shadow: 3px 3px 3px black;
+}
