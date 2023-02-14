@@ -3,6 +3,7 @@ let currentPlayer = "X";
 const info = document.querySelector(".info")
 info.textContent = `Au tour de ${currentPlayer}`
 
+const restart = document.querySelector('.restart');
 const cells = document.querySelectorAll(".cell")
 
 cells.forEach(cell => cell.addEventListener("click", handleClick))
@@ -49,14 +50,16 @@ function verification () {
             continue;
         }
         else if (a === b && b === c) {
-            info.textContent = `Le joueur ${currentPlayer} a gagné ! Recharge la page pour recommencer une partie !`;
+            info.textContent = `Le joueur ${currentPlayer} a gagné !`;
+            restart.style.display = 'block';
             lock = true;
             return;
         }
     }
 
     if (!currentGame.includes('')) {
-        info.textContent = `Match Nul ! Recharge la page pour recommencer une partie !`;
+        info.textContent = `Match Nul !`;
+        restart.style.display = 'block';
         lock = true;
         return;
     }
